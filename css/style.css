@@ -490,11 +490,13 @@ body {
 }
 .flex-footer {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
+.block-adress-logo {
+  margin-right: 0;
+}
 .webstudio {
-  margin-top: 60px;
-  margin-right: 147px;
   margin-bottom: 20px;
 }
 .footer-logo {
@@ -550,7 +552,7 @@ body {
 
 .block-link {
   margin-top: 72px;
-  margin-right: 94px;
+  margin-right: 93px;
 }
 
 .title-footer {
@@ -598,79 +600,67 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.call-on {
-  display: block;
-
+.form {
   width: 570px;
-  height: 86px;
-
-  margin-top: 72px;
-  margin-bottom: 94px;
+  outline: 1px solid red;
 }
 
-.call {
+.form-footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
 
+.input-footer {
+  display: flex;
+  width: 358px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
   margin-right: 12px;
 
-  color: #acacb0;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-
   letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.call-email {
-  display: flex;
-  align-items: center;
-
-  border: 1px solid;
-  border-radius: 4px;
-  text-decoration: none;
-  padding-left: 16px;
 
   color: #acacb0;
+  background-color: #2f303a;
 }
-.button-secondary {
+.submit-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.call-secondary {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid;
   border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 29px;
+  padding-right: 28px;
 
   background-color: var(--accent-text);
-
   color: #ffffff;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 .icon-send {
   display: flex;
+  align-items: center;
+
   fill: var(--primary-white-color);
   width: 24px;
   height: 24px;
+
   margin-left: 10px;
-  margin-right: 29px;
-}
-.call:focus,
-.call:hover {
-  color: var(--primary-white-color);
+  padding: 0;
+  outline: 1px solid red;
 }
 
 /***************************portfolio**********************************/
