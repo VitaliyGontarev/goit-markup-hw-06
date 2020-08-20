@@ -307,6 +307,7 @@
             </p>
           </address>
         </div>
+
         <div class="block-link">
           <b class="title-footer">присоединяйтесь</b>
           <ul class="erase-stile">
@@ -340,22 +341,25 @@
             </li>
           </ul>
         </div>
-        <div class="call-on">
+        <form class="form" action="#">
           <b class="title-footer">Подпишитесь на рассылку</b>
-          <ul class="button-stile">
-            <li class="call">
-              <a class="call-email" href="#">E-mail</a>
-            </li>
-            <li class="button-secondary">
-              <a class="call-secondary" href="#"
-                >Подписаться
-                <svg class="icon-send" width="24" height="24">
-                  <use href="./img/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="form-footer">
+            <input
+              class="input-footer"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+
+            <button class="submit-footer" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>

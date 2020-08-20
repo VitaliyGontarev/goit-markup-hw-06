@@ -551,6 +551,53 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form-modal" action="#">
+          <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="group">
+            
+          <label class="modal-label" for="name">Имя</label>
+          <div class="position-modal">
+          <svg class="user-modal" width="12" height="12" >
+            <use href="./img/symbol-defs.svg#icon-user"></use>
+          </svg>
+          
+          <input class="modal-input" type="text" name="name" id="name" />
+           </div>
+
+          <label class="modal-label" for="tel-modal">Телефон</label>
+          <div  class="position-modal">
+          <svg class="user-modal" width="13" height="13">
+            <use href="./img/symbol-defs.svg#icon-trubka"></use>
+          </svg>
+          <input class="modal-input" type="tel" name="tel-modal" id="tel-modal" />
+        </div>
+          <label class="modal-label" for="mail-modal">Почта</label>
+          <div class="position-modal">
+          <svg class="user-modal" width="15" height="12">
+            <use href="./img/symbol-defs.svg#icon-convert"></use>
+          </svg>
+          <input class="modal-input" type="email" name="mail-modal" id="mail-modal" />
+          </div>
+          <label class="modal-label" for="comment-modal">Комментарий</label>
+          <textarea class="modal-input" class="text-textar"
+            name="comment"
+            id="comment-modal"
+            cols="30"
+            rows="10"
+            placeholder="Введите текст"
+          ></textarea>
+          </div>
+          <div class="agree-text">
+            <label class="modal-label" for="agree-modal"></label>
+            <input type="checkbox" name="agree-modal" id="agree-modal" />
+            
+            Соглашаюсь с рассылкой и принимаю <span class="agree-akcent">Условия договора</span> </label>
+          </div>
+          
+          <button class="submit-modal" type="submit">Отправить</button>
+          
+        </form>
+
         <button class="close-type" data-modal-close>
           <svg class="icon-close" style="width: 11; height: 11;">
             <use href="./img/symbol-defs.svg#icon-close"></use>
@@ -561,20 +608,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-<!--<div class="call-on">
-  <b class="title-footer">Подпишитесь на рассылку</b>
-  <ul class="button-stile">
-    <li class="call">
-      <a class="call-email" href="#">E-mail</a>
-    </li>
-    <li class="button-secondary">
-      <a class="call-secondary" href="#">Подписаться
-        <svg class="icon-send" width="24" height="24">
-          <use href="./img/symbol-defs.svg#icon-send"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
--->

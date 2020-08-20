@@ -490,13 +490,18 @@ body {
 }
 .flex-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .block-adress-logo {
-  margin-right: 0;
+  display: block;
+
+  margin: 0;
+  padding: 0;
 }
 .webstudio {
+  display: inline-block;
+  margin-right: 0;
   margin-bottom: 20px;
 }
 .footer-logo {
@@ -508,34 +513,38 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-
+  margin-right: 0;
   margin-bottom: 20px;
 }
 .footer-pat {
+  margin: 0;
   color: #ffffff;
 }
 .footer-adress {
+  display: inline-block;
   color: var(--primary-white-color);
 
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 9px;
 }
 .first-link {
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 9px;
 }
 .second-link {
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
 }
 .adress {
-  width: 231px;
+  display: inline-flex;
+  flex-direction: column;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  margin-right: 69px;
-  margin-bottom: 60px;
 }
 .adress-link {
   color: #acacb0;
@@ -551,8 +560,7 @@ body {
 }
 
 .block-link {
-  margin-top: 72px;
-  margin-right: 93px;
+  margin-left: 70px;
 }
 
 .title-footer {
@@ -602,7 +610,7 @@ body {
 }
 .form {
   width: 570px;
-  outline: 1px solid red;
+  margin-left: 93px;
 }
 
 .form-footer {
@@ -635,8 +643,6 @@ body {
 .submit-footer {
   display: flex;
 
-  border: 1px solid;
-  border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
@@ -649,6 +655,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  border: 1px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .icon-send {
   display: flex;
@@ -660,7 +670,6 @@ body {
 
   margin-left: 10px;
   padding: 0;
-  outline: 1px solid red;
 }
 
 /***************************portfolio**********************************/
@@ -850,6 +859,9 @@ body {
 }
 
 .close-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -862,4 +874,82 @@ body {
 
 .icon-close {
   fill: black;
+}
+/*********form-modal**********/
+.form-modal {
+  padding: 40px 40px;
+}
+.title-modal {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1, 15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-title-color);
+}
+.group {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1, 16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--main-text-color);
+}
+.position-modal {
+  position: relative;
+}
+.modal-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.text-textar {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.agree-akcent {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
+.agree-text {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+.submit-modal {
+  display: flex;
+  align-items: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-text);
+  color: var(--primary-white-color);
+}
+.user-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
 }
