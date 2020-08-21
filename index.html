@@ -549,53 +549,71 @@
         </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form-modal" action="#">
+        <form class="form-modal" action="#" autocomplete="off">
           <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="group">
-            
-          <label class="modal-label" for="name">Имя</label>
-          <div class="position-modal">
-          <svg class="user-modal" width="12" height="12" >
-            <use href="./img/symbol-defs.svg#icon-user"></use>
-          </svg>
-          
-          <input class="modal-input" type="text" name="name" id="name" />
-           </div>
+            <ul class="form-flip">
+              <li class="position-modal">
+                <label for="name" class="modal-label">Имя</label>
+                <input type="text" class="modal-input" name="name" id="name" />
+                <svg class="user-modal" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-user"></use>
+                </svg>
+              </li>
 
-          <label class="modal-label" for="tel-modal">Телефон</label>
-          <div  class="position-modal">
-          <svg class="user-modal" width="13" height="13">
-            <use href="./img/symbol-defs.svg#icon-trubka"></use>
-          </svg>
-          <input class="modal-input" type="tel" name="tel-modal" id="tel-modal" />
-        </div>
-          <label class="modal-label" for="mail-modal">Почта</label>
-          <div class="position-modal">
-          <svg class="user-modal" width="15" height="12">
-            <use href="./img/symbol-defs.svg#icon-convert"></use>
-          </svg>
-          <input class="modal-input" type="email" name="mail-modal" id="mail-modal" />
+              <li class="position-modal">
+                <label for="tel-modal" class="modal-label">Телефон</label>
+                <input
+                  class="modal-input"
+                  type="tel"
+                  name="tel-modal"
+                  id="tel-modal"
+                />
+                <svg class="user-modal" width="13" height="13">
+                  <use href="./img/symbol-defs.svg#icon-trubka"></use>
+                </svg>
+              </li>
+
+              <li class="position-modal">
+                <label class="modal-label" for="mail-modal">Почта</label>
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="mail-modal"
+                  id="mail-modal"
+                />
+                <svg class="user-modal" width="15" height="12">
+                  <use href="./img/symbol-defs.svg#icon-convert"></use>
+                </svg>
+              </li>
+
+              <li class="position-comment">
+                <label class="modal-label" for="comment-modal"
+                  >Комментарий</label
+                >
+                <textarea
+                  class="text-comment modal-comment"
+                  name="comment"
+                  id="comment-modal"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </li>
+            </ul>
           </div>
-          <label class="modal-label" for="comment-modal">Комментарий</label>
-          <textarea class="modal-input" class="text-textar"
-            name="comment"
-            id="comment-modal"
-            cols="30"
-            rows="10"
-            placeholder="Введите текст"
-          ></textarea>
-          </div>
-          <div class="agree-text">
-            <label class="modal-label" for="agree-modal"></label>
-            <input type="checkbox" name="agree-modal" id="agree-modal" />
-            
-            Соглашаюсь с рассылкой и принимаю <span class="agree-akcent">Условия договора</span> </label>
-          </div>
-          
+
+          <label class="agree-text">
+            <input class="checkbox" type="checkbox" name="agree-modal" />
+            <span class="icon-checkbox"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <span class="agree-akcent">Условия договора</span>
+          </label>
+
           <button class="submit-modal" type="submit">Отправить</button>
-          
         </form>
 
         <button class="close-type" data-modal-close>
